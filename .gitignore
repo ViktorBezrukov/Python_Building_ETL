@@ -1,0 +1,16 @@
+# Virtual environment
+venv/
+.venv/
+
+# Python cache
+__pycashe__/
+*.pyc
+
+# Data files
+data/
+*.csv
+*.xlsx
+
+#Pycharm
+.idea
+
