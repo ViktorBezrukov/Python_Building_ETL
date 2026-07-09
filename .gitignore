@@ -7,9 +7,11 @@ __pycashe__/
 *.pyc
 
 # Data files
-data/
-*.csv
+# data/
+# *.csv
 *.xlsx
+*.parquet
+.ipynb_checkpoints/
 
 #Pycharm
 .idea
