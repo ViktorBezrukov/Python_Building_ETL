@@ -1,15 +1,16 @@
-# TODO Import packages required...
+import extract_draft
+from ch_07_draft.transform_draft import transform_data_draft
 
 
 def run_pipeline():
 
     # Extract
-    crashes_df, vehicles_df, people_df = extract_data()
+    crashes_df, vehicles_df, people_df = extract_draft.extract_data()
 
     # Transform
-    crashes_df = transform_crashes(crashes_df)
-    vehicles_df = transform_vehicles(vehicles_df)
-    people_df = transform_people(people_df)
+    crashes_df = transform_data_draft(crashes_df)
+    vehicles_df = transform_data_draft(vehicles_df)
+    people_df = transform_data_draft(people_df)
 
     # Load
     load_crashes(crashes_df)
